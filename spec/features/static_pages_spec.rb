@@ -1,32 +1,37 @@
 require 'rails_helper'
 
 RSpec.feature "StaticPages", type: :feature do
-  before do
-    @base_title =  "Ruby on Rails Tutorial Sample App"
-  end
-
-  scenario "user visit root" do
+  scenario "visit root" do
     visit root_path
-    expect(page.title).to eq @base_title
+    expect(page.title).to eq full_title
   end
 
-  scenario "user visit home" do
-    visit static_pages_home_path
-    expect(page.title).to eq @base_title
+  scenario "click help " do
+    visit root_path
+    click_link "Help"
+
+    expect(page.title).to eq full_title("Help")
   end
 
-  scenario "user visit help " do
-    visit static_pages_help_path
-    expect(page.title).to eq "Help | #{@base_title}"
+  scenario "click about " do
+    visit root_path
+    click_link "About"
+
+    expect(page.title).to eq full_title("About")
   end
 
-  scenario "user visit about " do
-    visit static_pages_about_path
-    expect(page.title).to eq "About | #{@base_title}"
+  scenario "click contact " do
+    visit root_path
+    click_link "Contact"
+
+    expect(page.title).to eq full_title("Contact")
   end
 
-  scenario "user visit contact " do
-    visit static_pages_contact_path
-    expect(page.title).to eq "Contact | #{@base_title}"
+  scenario "click sample app " do
+    visit root_path
+    click_link "sample app"
+
+    expect(page.title).to eq full_title
   end
+
 end
