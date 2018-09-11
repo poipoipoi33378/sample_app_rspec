@@ -34,4 +34,11 @@ RSpec.feature "StaticPages", type: :feature do
     expect(page.title).to eq full_title
   end
 
+  scenario "click sing up " do
+    visit root_path
+    click_link "Sign up now!"
+
+    expect(page.title).to eq full_title("Sign up")
+  end
+
 end
