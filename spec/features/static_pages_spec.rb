@@ -7,12 +7,12 @@ RSpec.feature "StaticPages", type: :feature do
 
   scenario "user visit root" do
     visit root_path
-    expect(page.title).to eq "Home | #{@base_title}"
+    expect(page.title).to eq @base_title
   end
 
   scenario "user visit home" do
     visit static_pages_home_path
-    expect(page.title).to eq "Home | #{@base_title}"
+    expect(page.title).to eq @base_title
   end
 
   scenario "user visit help " do
