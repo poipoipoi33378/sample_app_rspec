@@ -68,7 +68,7 @@ RSpec.describe User, type: :model do
     expect(@user.errors[:password]).to include("can't be blank")
   end
 
-  it "is invalid with blank password" do
+  it "is invalid with short password" do
     @user.password = @user.password_confirmation = "a" * 5
 
     @user.valid?
