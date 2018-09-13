@@ -78,4 +78,7 @@ RSpec.describe User, type: :model do
     expect(user.errors[:password]).to include("is too short (minimum is 6 characters)")
   end
 
+  it "return digest" do
+    expect(User.digest("test")).to_not eq "$2a$04$nYrtOxM4U3q4L/cf.xsBC.Ltv1nrfcEKcTAdNo88P.nbTMDW4yE4a"
+  end
 end

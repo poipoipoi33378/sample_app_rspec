@@ -22,6 +22,9 @@ RSpec.feature "Users", type: :feature do
       expect(page).to have_css "div.alert.alert-success"
       expect(page).to have_content "Welcome to the Sample App!"
       expect(page).to have_current_path "/users/1"
+      # for check login menu
+      expect(page).to have_link "Account"
+
     end.to change(User, :count).by(1)
   end
 
