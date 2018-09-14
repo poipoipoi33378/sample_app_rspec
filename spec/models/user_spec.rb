@@ -78,7 +78,16 @@ RSpec.describe User, type: :model do
     expect(user.errors[:password]).to include("is too short (minimum is 6 characters)")
   end
 
-  it "return digest" do
-    expect(User.digest("test")).to_not eq "$2a$04$nYrtOxM4U3q4L/cf.xsBC.Ltv1nrfcEKcTAdNo88P.nbTMDW4yE4a"
+  it "user authenticate" do
+    user = FactoryBot.build(:user)
+    user.remember
+    expect(user).to be_authenticated(user.remember_token)
+    expect(user).to_not be_authenticated("dammy")
+  end
+
+  it "returns false with user with nil digest" do
+    user = FactoryBot.build(:user)
+    user.remember_digest = nil
+    expect(user).to_not be_authenticated("")
   end
 end

@@ -71,6 +71,64 @@ RSpec.feature "Sessions", type: :feature do
 
     expect(page).to have_current_path "/"
     expect(page).to_not have_link "Account"
+
+    # for forget error
+    page.driver.delete(logout_path)
+
+    expect(page).to_not have_link "Log out"
+    expect(page).to have_link "Log in",href: login_path
+  end
+
+  scenario "user login with Remember me and login again",driver: :selenium do
+
+    user = FactoryBot.create(:user)
+
+    visit root_path
+    click_link "Log in"
+
+    fill_in "Email", with: user.email
+    fill_in "Password", with: user.password
+    check "Remember me on this computer"
+    click_button "Log in"
+
+    expect(page).to have_current_path "/users/#{user.id}"
+    expect(page).to have_link "Account"
+
+    # show_me_the_cookies
+    # puts get_me_the_cookie("remember_token")
+    # puts get_me_the_cookie("user_id")
+
+    expire_cookies
+
+    # show_me_the_cookies
+    # puts get_me_the_cookie("remember_token")
+    # puts get_me_the_cookie("user_id")
+
+    visit root_path
+    expect(page).to have_link "Account"
+    expect(page).to_not have_link "Log in"
+  end
+
+  scenario "user login without Remember me and login again error",driver: :selenium do
+
+    user = FactoryBot.create(:user)
+
+    visit root_path
+    click_link "Log in"
+
+    fill_in "Email", with: user.email
+    fill_in "Password", with: user.password
+    uncheck "Remember me on this computer"
+    click_button "Log in"
+
+    expect(page).to have_current_path "/users/#{user.id}"
+    expect(page).to have_link "Account"
+
+    expire_cookies
+
+    visit root_path
+    expect(page).to_not have_link "Account"
+    expect(page).to have_link "Log in"
   end
 
 end
