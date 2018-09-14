@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40955014-00b8-4ba7-b480-5da317858d93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sample_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sample_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sessions/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/features/sessions_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/sessions_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -30,14 +18,16 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/sample_app@UsersController_GET__sample_app.rcov" NAME="UsersController GET: sample_app Coverage Results" MODIFIED="1536731561390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
+    <SUITE FILE_PATH="coverage/sample_app@SessionsHelper_Session_Helper__sample_app.rcov" NAME="SessionsHelper Session Helper: sample_app Coverage Results" MODIFIED="1536890882790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@User_return_digest__sample_app.rcov" NAME="User return digest: sample_app Coverage Results" MODIFIED="1536824635080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@User_has_a_valid_factory__sample_app.rcov" NAME="User has a valid factory: sample_app Coverage Results" MODIFIED="1536729539455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@Rails_console__sample_app_sandbox.rcov" NAME="Rails console: sample_app sandbox Coverage Results" MODIFIED="1536817049166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@Sessions_success_user_login_with_Remember_me__sample_app.rcov" NAME="Sessions success user login with Remember me: sample_app Coverage Results" MODIFIED="1536888295495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@Users_create_my_account__sample_app.rcov" NAME="Users create my account: sample_app Coverage Results" MODIFIED="1536750931830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@User_returns_false_with_user_with_nil_digest__sample_app.rcov" NAME="User returns false with user with nil digest: sample_app Coverage Results" MODIFIED="1536830977993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
+    <SUITE FILE_PATH="coverage/sample_app@SessionsHelper_Session_Helper_current_user_returns_right_when_session_is_nil__sample_app.rcov" NAME="SessionsHelper Session Helper current_user returns right when session is nil: sample_app Coverage Results" MODIFIED="1536890777845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@Development__sample_app.rcov" NAME="Development: sample_app Coverage Results" MODIFIED="1536845793658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
-    <SUITE FILE_PATH="coverage/sample_app@Sessions_user_login_without_Remember_me_and_login_again_error__sample_app.rcov" NAME="Sessions user login without Remember me and login again error: sample_app Coverage Results" MODIFIED="1536888722398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
+    <SUITE FILE_PATH="coverage/sample_app@Sessions_user_login_without_Remember_me_and_login_again_error__sample_app.rcov" NAME="Sessions user login without Remember me and login again error: sample_app Coverage Results" MODIFIED="1536889582616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@User__sample_app.rcov" NAME="User: sample_app Coverage Results" MODIFIED="1536731208855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@Run_spec__users_spec___sample_app.rcov" NAME="Run spec 'users_spec': sample_app Coverage Results" MODIFIED="1536751257879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@Rails_console__sample_app.rcov" NAME="Rails console: sample_app Coverage Results" MODIFIED="1536733469702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
@@ -47,7 +37,8 @@
     <SUITE FILE_PATH="coverage/sample_app@User_create_user__sample_app.rcov" NAME="User create user: sample_app Coverage Results" MODIFIED="1536729676538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@Users_create_my_account_error__sample_app.rcov" NAME="Users create my account error: sample_app Coverage Results" MODIFIED="1536751242344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@Sessions_success_user_logout__sample_app.rcov" NAME="Sessions success user logout: sample_app Coverage Results" MODIFIED="1536829670526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
-    <SUITE FILE_PATH="coverage/sample_app@spec__sample_app.rcov" NAME="spec: sample_app Coverage Results" MODIFIED="1536888927174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
+    <SUITE FILE_PATH="coverage/sample_app@spec__sample_app.rcov" NAME="spec: sample_app Coverage Results" MODIFIED="1536889648579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
+    <SUITE FILE_PATH="coverage/sample_app@All_specs_in_sample_app__sample_app.rcov" NAME="All specs in sample_app: sample_app Coverage Results" MODIFIED="1536889687064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@UsersController_GET_returns_http_success_with_show__sample_app.rcov" NAME="UsersController GET returns http success with show: sample_app Coverage Results" MODIFIED="1536731323388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
     <SUITE FILE_PATH="coverage/sample_app@UsersHelper_garavatar_returns_imge_tag__sample_app.rcov" NAME="UsersHelper garavatar returns imge_tag: sample_app Coverage Results" MODIFIED="1536735466003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sample_app" />
   </component>
@@ -113,7 +104,7 @@
           <entry key="haml" value="33" />
           <entry key="js" value="1" />
           <entry key="md" value="1" />
-          <entry key="rb" value="102" />
+          <entry key="rb" value="107" />
           <entry key="scss" value="5" />
           <entry key="sql" value="1" />
           <entry key="users" value="5" />
@@ -128,7 +119,7 @@
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="4" />
-          <entry key="Ruby" value="112" />
+          <entry key="Ruby" value="117" />
           <entry key="SCSS" value="5" />
           <entry key="Scratch" value="1" />
           <entry key="YAML" value="1" />
@@ -142,7 +133,7 @@
           <entry key="haml" value="1449" />
           <entry key="js" value="35" />
           <entry key="md" value="27" />
-          <entry key="rb" value="5590" />
+          <entry key="rb" value="5878" />
           <entry key="scss" value="155" />
         </counts>
       </usages-collector>
@@ -152,7 +143,7 @@
           <entry key="JavaScript" value="35" />
           <entry key="Markdown" value="27" />
           <entry key="RHTML" value="7" />
-          <entry key="Ruby" value="7432" />
+          <entry key="Ruby" value="7720" />
           <entry key="SCSS" value="155" />
         </counts>
       </usages-collector>
@@ -165,29 +156,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+            <entry file="file://$PROJECT_DIR$/spec/helpers/session_helper_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="379">
-                  <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec/helpers/users_helper_spec.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
                 </state>
               </provider>
             </entry>
@@ -197,10 +179,28 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="282">
+                  <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/features/users_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="289">
                   <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -223,11 +223,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/features/sessions_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="129" column="43" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+                <state relative-caret-position="217">
+                  <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -252,6 +252,7 @@
       <find>jqu</find>
       <find>config.f</find>
       <find>spec/su</find>
+      <find>check</find>
     </findStrings>
     <replaceStrings>
       <replace>$gray-medium-light</replace>
@@ -299,7 +300,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/spec/features/users_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.haml" />
@@ -309,6 +309,8 @@
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/spec/features/sessions_spec.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/helpers/session_helper_spec.rb" />
       </list>
     </option>
   </component>
@@ -469,7 +471,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Rake.spec: sample_app">
+  <component name="RunManager" selected="RSpec.SessionsHelper Session Helper: sample_app">
     <configuration name="Rails console: sample_app sandbox" type="IrbRunConfigurationType" factoryName="IRB コンソール">
       <module name="sample_app" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -542,40 +544,6 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Sessions success user logout: sample_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="sample_app" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/features/sessions_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Sessions success user logout" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="true" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
     <configuration name="Sessions user login without Remember me and login again error: sample_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="sample_app" />
@@ -610,7 +578,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="User returns false with user with nil digest: sample_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="SessionsHelper Session Helper current_user returns right when session is nil: sample_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="sample_app" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -630,10 +598,44 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/helpers/session_helper_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User returns false with user with nil digest" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="SessionsHelper Session Helper current_user returns right when session is nil" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SessionsHelper Session Helper: sample_app" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="sample_app" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/helpers/session_helper_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="SessionsHelper Session Helper" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -781,18 +783,18 @@
       <item itemvalue="Rake.test: sample_app" />
       <item itemvalue="Rake.spec: sample_app" />
       <item itemvalue="RSpec.User user authenticate: sample_app" />
-      <item itemvalue="RSpec.Sessions success user logout: sample_app" />
-      <item itemvalue="RSpec.User returns false with user with nil digest: sample_app" />
       <item itemvalue="RSpec.Sessions success user login with Remember me: sample_app" />
       <item itemvalue="RSpec.Sessions user login without Remember me and login again error: sample_app" />
+      <item itemvalue="RSpec.SessionsHelper Session Helper current_user returns right when session is nil: sample_app" />
+      <item itemvalue="RSpec.SessionsHelper Session Helper: sample_app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.SessionsHelper Session Helper: sample_app" />
+        <item itemvalue="RSpec.SessionsHelper Session Helper current_user returns right when session is nil: sample_app" />
         <item itemvalue="RSpec.Sessions user login without Remember me and login again error: sample_app" />
         <item itemvalue="RSpec.Sessions success user login with Remember me: sample_app" />
         <item itemvalue="RSpec.User user authenticate: sample_app" />
-        <item itemvalue="RSpec.User returns false with user with nil digest: sample_app" />
-        <item itemvalue="RSpec.Sessions success user logout: sample_app" />
       </list>
     </recent_temporary>
   </component>
@@ -808,44 +810,44 @@
       <option name="presentableId" value="Default" />
       <updated>1536562864843</updated>
       <workItem from="1536562866258" duration="34198000" />
-      <workItem from="1536721732501" duration="46773000" />
+      <workItem from="1536721732501" duration="48725000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Sessions_success_user_login_with_Remember_me__sample_app - 2018.09.14 at 10h 16m 06s.xml">
-      <configuration name="Sessions success user login with Remember me: sample_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Sessions_success_user_login_with_Remember_me__sample_app - 2018.09.14 at 10h 18m 42s.xml">
-      <configuration name="Sessions success user login with Remember me: sample_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Sessions_success_user_login_with_Remember_me__sample_app - 2018.09.14 at 10h 20m 43s.xml">
-      <configuration name="Sessions success user login with Remember me: sample_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Sessions_success_user_login_with_Remember_me__sample_app - 2018.09.14 at 10h 21m 21s.xml">
-      <configuration name="Sessions success user login with Remember me: sample_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Sessions_success_user_login_with_Remember_me__sample_app - 2018.09.14 at 10h 22m 35s.xml">
-      <configuration name="Sessions success user login with Remember me: sample_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Sessions_success_user_login_with_Remember_me__sample_app - 2018.09.14 at 10h 25m 00s.xml">
-      <configuration name="Sessions success user login with Remember me: sample_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Sessions_user_login_without_Remember_me_and_login_again_error__sample_app - 2018.09.14 at 10h 30m 27s.xml">
-      <configuration name="Sessions user login without Remember me and login again error: sample_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Sessions_user_login_without_Remember_me_and_login_again_error__sample_app - 2018.09.14 at 10h 32m 08s.xml">
-      <configuration name="Sessions user login without Remember me and login again error: sample_app" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="spec__sample_app - 2018.09.14 at 10h 32m 49s.xml">
+    <history-entry file="spec__sample_app - 2018.09.14 at 10h 35m 37s.xml">
       <configuration name="spec: sample_app" configurationId="RakeRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__sample_app - 2018.09.14 at 10h 33m 09s.xml">
+    <history-entry file="Sessions_user_login_without_Remember_me_and_login_again_error__sample_app - 2018.09.14 at 10h 44m 54s.xml">
+      <configuration name="Sessions user login without Remember me and login again error: sample_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Sessions_user_login_without_Remember_me_and_login_again_error__sample_app - 2018.09.14 at 10h 46m 07s.xml">
+      <configuration name="Sessions user login without Remember me and login again error: sample_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Sessions_user_login_without_Remember_me_and_login_again_error__sample_app - 2018.09.14 at 10h 46m 29s.xml">
+      <configuration name="Sessions user login without Remember me and login again error: sample_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="spec__sample_app - 2018.09.14 at 10h 47m 40s.xml">
       <configuration name="spec: sample_app" configurationId="RakeRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_sample_app__sample_app - 2018.09.14 at 10h 48m 13s.xml">
+      <configuration name="All specs in sample_app: sample_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SessionsHelper_Session_Helper_current_user_returns_right_when_session_is_nil__sample_app - 2018.09.14 at 10h 58m 09s.xml">
+      <configuration name="SessionsHelper Session Helper current_user returns right when session is nil: sample_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SessionsHelper_Session_Helper_current_user_returns_right_when_session_is_nil__sample_app - 2018.09.14 at 11h 00m 40s.xml">
+      <configuration name="SessionsHelper Session Helper current_user returns right when session is nil: sample_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SessionsHelper_Session_Helper_current_user_returns_right_when_session_is_nil__sample_app - 2018.09.14 at 11h 06m 20s.xml">
+      <configuration name="SessionsHelper Session Helper current_user returns right when session is nil: sample_app" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SessionsHelper_Session_Helper__sample_app - 2018.09.14 at 11h 06m 30s.xml">
+      <configuration name="SessionsHelper Session Helper: sample_app" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88563000" />
+    <option name="totallyTimeSpent" value="90515000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -927,13 +929,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -989,13 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/helpers/users_helper_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1021,13 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/helpers/application_helper_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1239,31 +1220,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/spec/features/sessions_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        <state relative-caret-position="217">
+          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/helpers/application_helper_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="17" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/helpers/users_helper_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/sessions_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/helpers/session_helper_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="129" column="43" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+        <state relative-caret-position="135">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
