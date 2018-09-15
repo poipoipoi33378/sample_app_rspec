@@ -48,8 +48,8 @@ RSpec.describe User, type: :model do
   end
 
   it "is invalid with duplicate address" do
-    FactoryBot.create(:user)
-    user = FactoryBot.build(:user)
+    FactoryBot.create(:user,:email => "test@email.com")
+    user = FactoryBot.build(:user,:email => "test@email.com")
     user.email.upcase!
     user.valid?
     expect(user.errors[:email]).to include("has already been taken")

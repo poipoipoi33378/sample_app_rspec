@@ -17,11 +17,11 @@ RSpec.feature "Sessions", type: :feature do
     fill_in "Password", with: user.password
     click_button "Log in"
 
-    expect(page).to have_current_path "/users/#{user.id}"
+    expect(page).to have_current_path user_path(user)
     expect(page).to have_link "Account"
-    expect(page).to have_link "Users",href: "#"
-    expect(page).to have_link "Profile",href: "/users/#{user.id}"
-    expect(page).to have_link "Setting",href: "#"
+    expect(page).to have_link "Users",href: users_path
+    expect(page).to have_link "Profile",href: user_path(user)
+    expect(page).to have_link "Setting",href: edit_user_path(user)
     expect(page).to have_link "Log out",href: logout_path
     expect(page).to_not have_link "Log in",href: login_path
   end

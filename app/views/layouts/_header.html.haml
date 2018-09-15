@@ -9,7 +9,7 @@
           = link_to "Help",  help_path
         -if logged_in?
           %li
-            = link_to "Users", "#"
+            = link_to "Users", users_path
           %li.dropdown
             %a.doropdown-toggle{"href" => "#","data-toggle" => "dropdown"}
               Account
@@ -18,7 +18,7 @@
               %li
                 =link_to "Profile", current_user
               %li
-                =link_to "Setting", "#"
+                =link_to "Setting", edit_user_path(current_user)
               %li.divider
               %li
                 =link_to "Log out", logout_path,method: :delete
