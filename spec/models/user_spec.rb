@@ -81,13 +81,23 @@ RSpec.describe User, type: :model do
   it "user authenticate" do
     user = FactoryBot.build(:user)
     user.remember
-    expect(user).to be_authenticated(user.remember_token)
-    expect(user).to_not be_authenticated("dammy")
+    expect(user).to be_authenticated(:remember,user.remember_token)
+    expect(user).to_not be_authenticated(:remember,"dammy")
   end
 
   it "returns false with user with nil digest" do
     user = FactoryBot.build(:user)
     user.remember_digest = nil
-    expect(user).to_not be_authenticated("")
+    expect(user).to_not be_authenticated(:remember,"")
+  end
+
+  it "create activation_digest before user create" do
+    user = FactoryBot.build(:user)
+    expect(user.activation_digest).to be_nil
+    expect(user.activation_token).to be_nil
+
+    user.save
+    expect(user.activation_digest).to_not be_nil
+    expect(user.activation_token).to_not be_nil
   end
 end

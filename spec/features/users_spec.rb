@@ -9,21 +9,7 @@ RSpec.feature "Users", type: :feature do
     end
 
     scenario "create my account" do
-      fill_in "Name", with: @user.name
-      fill_in "Email", with: @user.email
-      fill_in "Password", with: @user.password
-      fill_in "Confirmation", with: @user.password
-
-      expect do
-        click_button "Create my account"
-        expect(page).to_not have_css "div#error_explanation"
-        expect(page).to_not have_css "div.field_with_errors"
-        expect(page).to have_css "div.alert.alert-success"
-        expect(page).to have_content "Welcome to the Sample App!"
-        expect(page).to have_current_path "/users/1"
-        # for check login menu
-        expect(page).to have_link "Account"
-      end.to change(User, :count).by(1)
+      # -> account_actiovations_spec
     end
 
     scenario "create my account error" do
@@ -39,6 +25,63 @@ RSpec.feature "Users", type: :feature do
         expect(page).to have_css "div.field_with_errors"
         expect(page).to have_current_path "/signup"
       end.to_not change(User, :count)
+    end
+  end
+
+  feature "log in" do
+    scenario "activated user can log in" do
+      user = FactoryBot.create(:user)
+      user.update_attribute(:activated,    true)
+      user.update_attribute(:activated_at, Time.zone.now)
+
+      visit root_path
+      click_link "Log in"
+
+      fill_in "Email", with: user.email
+      fill_in "Password", with: user.password
+      click_button "Log in"
+
+      expect(page).to have_link "Account"
+      expect(page).to have_current_path user_path(user)
+    end
+
+    scenario "user can not log in without activate" do
+      user = FactoryBot.create(:user)
+      user.update_attribute(:activated,    false)
+      user.update_attribute(:activated_at, nil)
+      user.save
+      expect(user).to_not be_activated
+
+      visit root_path
+      click_link "Log in"
+
+      fill_in "Email", with: user.email
+      fill_in "Password", with: user.password
+      click_button "Log in"
+
+      message  = "Account not activated. "
+      message += "Check your email for the activation link."
+      expect(page).to have_content message
+      expect(page).to have_current_path root_path
+
+    end
+
+  end
+
+  feature "show profile" do
+    scenario "not visit unactivated user profile" do
+      user = FactoryBot.create(:user)
+      not_activated_user = FactoryBot.create(:user,activated: false)
+
+      visit root_path
+      click_link "Log in"
+
+      fill_in "Email", with: user.email
+      fill_in "Password", with: user.password
+      click_button "Log in"
+
+      visit user_path(not_activated_user)
+      expect(page).to have_current_path root_path
     end
   end
 

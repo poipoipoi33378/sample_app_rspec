@@ -16,6 +16,9 @@ RSpec.feature "UsersIndexSpec.rbs", type: :feature  do
       # scenario "index including pagination" ,driver: :selenium do
       scenario "admin user show users profile and delete" ,js: true do
 
+        not_activated_user = User.find(5)
+        not_activated_user.update_columns(activated: false, activated_at: nil)
+
         user = @admin_user
         visit root_path
         click_link "Log in"
@@ -26,12 +29,13 @@ RSpec.feature "UsersIndexSpec.rbs", type: :feature  do
         click_link "Users"
         expect(page).to have_current_path '/users'
         expect(page).to have_css 'div.pagination',count:2
-        User.paginate(page: 1).each do |user|
+        User.where(activated: true).paginate(page: 1).each do |user|
           expect(page).to have_link user.name,href: user_path(user)
           unless user.admin?
             expect(page).to have_link "delete",href: user_path(user)
           end
         end
+        expect(page).to_not have_link user.name,href: user_path(not_activated_user)
 
         # delete cancel
         expect do
