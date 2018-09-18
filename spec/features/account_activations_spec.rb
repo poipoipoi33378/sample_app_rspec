@@ -41,7 +41,7 @@ RSpec.feature "AccountActivations", type: :feature do
     # expect(user.authenticated?(:activation, token[0].to_s)).to be_truthy
     user.activation_token = token[0][0]
     expect(user.authenticated?(:activation, user.activation_token)).to be_truthy
-    page.driver.submit :get , edit_account_activation_url(user.activation_token,email: user.email,id:user.activation_token),{}
+    page.driver.submit :get , edit_account_activation_url(user.activation_token,email: user.email),{}
 
     user = User.first
     expect(page).to have_content "Account activated!"
