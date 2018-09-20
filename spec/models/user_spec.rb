@@ -100,4 +100,14 @@ RSpec.describe User, type: :model do
     expect(user.activation_digest).to_not be_nil
     expect(user.activation_token).to_not be_nil
   end
+
+  it "delete microposts" do
+    user = User.new(name: "Example User", email: "user@example.com",
+                     password: "foobar", password_confirmation: "foobar")
+    user.save
+    user.microposts.create!(content: "Lorem ipsum")
+    expect do
+      user.destroy
+    end.to change(Micropost,:count).by(-1)
+  end
 end

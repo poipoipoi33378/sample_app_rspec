@@ -83,6 +83,32 @@ RSpec.feature "Users", type: :feature do
       visit user_path(not_activated_user)
       expect(page).to have_current_path root_path
     end
+
+    scenario "show user profile and microposts" do
+      user = FactoryBot.create(:user)
+
+      50.times do |i|
+        user.microposts.create(content: "test#{i}")
+      end
+      expect(Micropost.count).to eq 50
+
+      visit root_path
+      click_link "Log in"
+
+      fill_in "Email", with: user.email
+      fill_in "Password", with: user.password
+      click_button "Log in"
+
+      visit user_path(user)
+
+      expect(page).to have_title(full_title(user.name))
+      expect(page).to have_css 'div.pagination'
+      expect(page).to have_content "Microposts (#{user.microposts.count})"
+      expect(find("h1 img.gravatar")).to_not be_nil
+      user.microposts.paginate(page: 1).each do |micropost|
+        expect(page).to have_content micropost.content
+      end
+    end
   end
 
   feature "edit profile" do
@@ -257,5 +283,4 @@ RSpec.feature "Users", type: :feature do
 
     expect(page).to have_current_path user_path(user)
   end
-
 end
