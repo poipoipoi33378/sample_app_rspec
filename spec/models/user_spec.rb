@@ -110,4 +110,45 @@ RSpec.describe User, type: :model do
       user.destroy
     end.to change(Micropost,:count).by(-1)
   end
+
+  it "follow and unfollow a user" do
+    user1 = FactoryBot.create(:user)
+    user2 = FactoryBot.create(:user)
+
+    expect(user1).to_not be_following(user2)
+    user1.follow(user2)
+    expect(user1).to be_following(user2)
+    expect(user2.followers.include?(user1)).to be_truthy
+    user1.unfollow(user2)
+    expect(user1).to_not be_following(user2)
+    expect(user2.followers.include?(user1)).to be_falsey
+  end
+
+  it "feed have the right posts" do
+
+    michael = FactoryBot.create(:user,name: "michael")
+    archer = FactoryBot.create(:user,name: "archer")
+    lana = FactoryBot.create(:user,name: "lana")
+
+    michael.follow(lana)
+    4.times do
+      michael.microposts.create(content: "Mytext")
+      archer.microposts.create(content: "Mytext")
+      lana.microposts.create(content: "Mytext")
+    end
+
+    # フォローしているユーザーの投稿を確認
+    lana.microposts.each do |post_following|
+      assert michael.feed.include?(post_following)
+    end
+    # 自分自身の投稿を確認
+    michael.microposts.each do |post_self|
+      assert michael.feed.include?(post_self)
+    end
+    # フォローしていないユーザーの投稿を確認
+    archer.microposts.each do |post_unfollowed|
+      expect(michael.feed.include?(post_unfollowed)).to be_falsey
+    end
+  end
+
 end

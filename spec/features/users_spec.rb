@@ -283,4 +283,111 @@ RSpec.feature "Users", type: :feature do
 
     expect(page).to have_current_path user_path(user)
   end
+
+  scenario "show following and follower" ,js: true  do
+    user = FactoryBot.create(:user)
+
+    following_count = 6
+    followers_count = 5
+
+    followers_count.times do
+      user.followers << FactoryBot.create(:user)
+    end
+
+    following_count.times do
+      user.following << FactoryBot.create(:user)
+    end
+
+    visit login_path
+
+    fill_in "Email", with: user.email
+    fill_in "Password", with: user.password
+    click_button "Log in"
+
+    click_link "Home"
+    expect(find("#following")).to have_content following_count
+    expect(find("#followers")).to have_content followers_count
+
+    click_link "Users"
+    following_user = user.following.first
+    click_link href: user_path(following_user)
+    expect(page).to have_button("Unfollow")
+
+    expect do
+      click_button "Unfollow"
+      expect(page).to have_button("Follow")
+    end.to change(Relationship,:count).by(-1)
+
+
+    click_link "Users"
+    followed_user = user.followers.first
+    click_link href: user_path(followed_user)
+    expect(page).to have_button("Follow")
+    expect do
+      click_button "Follow"
+      expect(page).to have_button("Unfollow")
+    end.to change(Relationship,:count).by(1)
+
+  end
+
+  scenario "show following and followers" do
+    user = FactoryBot.create(:user)
+
+    visit following_user_path(user)
+    expect(page).to have_current_path(login_path)
+
+    visit followers_user_path(user)
+    expect(page).to have_current_path(login_path)
+  end
+
+  scenario "show following and followers" do
+    user = FactoryBot.create(:user)
+
+    visit following_user_path(user)
+    expect(page).to have_current_path(login_url)
+
+    visit followers_user_path(user)
+    expect(page).to have_current_path(login_url)
+  end
+
+  context "follow page" do
+    let(:user) { FactoryBot.create(:user) }
+    before do
+      5.times do
+        user.followers << FactoryBot.create(:user)
+      end
+
+      5.times do
+        user.following << FactoryBot.create(:user)
+      end
+
+      visit edit_user_path(user)
+      expect(page).to have_current_path "/login"
+
+      fill_in "Email", with: user.email
+      fill_in "Password", with: user.password
+      click_button "Log in"
+    end
+
+    scenario "following page" do
+      visit following_user_path(user)
+      expect(user.following).to_not be_empty
+      expect(page).to have_content(user.following.count.to_s)
+
+      user.following.each do|user|
+        expect(page).to have_link href: user_path(user)
+      end
+    end
+
+    scenario "followers page" do
+      visit followers_user_path(user)
+      expect(user.followers).to_not be_empty
+      expect(page).to have_content(user.followers.count.to_s)
+
+      user.followers.each do|user|
+        expect(page).to have_link href: user_path(user)
+      end
+    end
+  end
 end
+
